@@ -1,8 +1,8 @@
 <?php
-/*
+
 ini_set('display_errors', 1);
 error_reporting(E_ALL); 
-*/
+
 
 function load_tempulate($name) {
     //printf("include $name.php");
@@ -73,6 +73,44 @@ include __DIR__."/../__templates/__footer.php";
 This is less flexible and more error-prone if you change directory structures or add new templates.
 
  */
+
+
+
+?>
+<?
+
+function signup($user ,  $pass , $email , $phone )
+{
+$servername = "mysql.selfmade.ninja:3306";
+$username = "blackrock";
+$password = "vip123@@@###";
+$dbname = "blackrock_newdb";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+} 
+
+$sql = "INSERT INTO `auth` (`username`, `password`, `email`, `phone`, `blocked`, `active`)
+VALUES ('$user', '$pass ', '$email', '$phone' , '0', '1');";
+$error = false;
+if ($conn->query($sql) === TRUE) {
+  $error = true;
+} else {
+    // echo "error" . $sql . <br> . $conn->error;
+    $result = false;
+}
+
+// $conn->close();
+// return $result;
+
+
+ 
+    
+}
+
 
 
 
