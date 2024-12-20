@@ -4,7 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Photogram </title>
+    <title>Photogram 🍿</title>
 
     
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">

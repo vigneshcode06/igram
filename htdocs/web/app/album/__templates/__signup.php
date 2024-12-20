@@ -8,7 +8,7 @@ if (isset($_POST['username']) && isset($_POST['password']) && isset($_POST['emai
     $email = $_POST['email'];
     $phone = $_POST['phone'];
 
-    $result = signup($username, $password, $email, $phone);
+    $result = user::signup($username, $password, $email, $phone);
     $signup = true;
 }
 ?>
@@ -72,6 +72,7 @@ if ($signup) {
         <p class="mt-5 mb-3 text-muted">&copy; 2017&ndash;2021</p>
     </form>
 </main>
+
 <?php
 // Ensure this is the closing PHP tag for any other logic, if needed.
 ?>
