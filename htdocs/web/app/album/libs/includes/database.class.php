@@ -9,10 +9,10 @@
 
          if(database::$conn == null){
 
-            $servername = "##########";
-            $username = "############";
-            $password = "############";
-            $dbname = "##############";
+            $servername = "#############";
+            $username = "###############";
+            $password = "###############";
+            $dbname = "##################";
 
         // Create connection
         $connection = new mysqli($servername, $username, $password, $dbname);
