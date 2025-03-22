@@ -1,4 +1,4 @@
-# Photogram 📸
+# Igram 📸
 
 Welcome to **Photogram**, a sleek social media platform inspired by Instagram, built with **PHP**. Still under construction, this project is my journey of learning and building, combining knowledge with hands-on experience. 🔧💡
 
